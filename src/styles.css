@@ -6,7 +6,6 @@
 }
 
 * {
-    font-family: 'Inter-Medium';
     color: #616161;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
@@ -15,4 +14,32 @@
 
 body {
     margin: 0;
+}
+
+.container {
+    position: fixed;
+    width: 200px;
+    background-color: #d4dde1;
+    height: 84px;
+    left: 250px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1);
+}
+
+.menu-second {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 40px;
+    color: black;
+    padding-top: 7px;
+    padding-bottom: 10px;
+}
+
+.icon {
+    opacity: 60%;
+    height: 26px;
+    padding-left: 0px;
+    position: absolute;
+}
+
+.menu-second:hover {
+    background-color: #ffccbb;
 }

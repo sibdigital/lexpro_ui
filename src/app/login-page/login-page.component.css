@@ -8,6 +8,10 @@ textarea {
     border: none
 }
 
+* {
+    font-family: 'Inter-Medium';
+}
+
 
 /*textarea:focus,
 input:focus {
@@ -99,7 +103,7 @@ button:hover {
     font-size: 20px;
     color: #fff;
     border-radius: 25px;
-    background: #50b45e;
+    background: #335252;
     line-height: 1.2;
     text-transform: uppercase;
     display: flex;

@@ -10,12 +10,16 @@ export class LoginPage implements OnInit{
 
     elem: HTMLStyleElement | undefined
 
-    ngOnInit(){        
+    constructor(){        
+    }
+
+    ngOnInit(){
         this.elem = document.getElementById("main-container") as HTMLStyleElement
-        console.log(345)
+        this.onResize()
     }
 
     onResize(){
+        console.log(345)
         if(window.innerWidth / window.innerHeight < 1.5){
             this.elem!!.style.backgroundSize = 'auto 100vh'
         }
