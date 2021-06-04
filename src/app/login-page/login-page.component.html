@@ -1,21 +1,19 @@
 <div (window:resize)="onResize()" class="main-container" id="main-container">
-    <div class="login-windows">
+    <mat-card class="login-window">
         <form class="login-form">
             <span class="title">
-                    Добро пожаловать
-                </span>
+                Добро пожаловать
+            </span>
             <span class="descript">Автоматизированная информационная система<br><br>"Законопроект"</span>
-            <div class="wrap-input">
-                <input (focus)="borderCreate($event)" (blur)="borderRemove($event)" placeholder="Имя пользователя" class="input" type="text" name="email">
-            </div>
-            <div class="wrap-input" data-validate="Enter password">
-                <input (focus)="borderCreate($event)" (blur)="borderRemove($event)" placeholder="Пароль" class="input" type="password" name="pass">
-            </div>
-            <div class="container-login-form-btn">
-                <button type="button" routerLink='/main-page' class="login-form-btn">
-                        Вход
-                    </button>
-            </div>
+            <mat-form-field appearance="fill" style="width: 100%;">
+                <mat-label>Имя пользователя</mat-label>
+                <input matInput>
+            </mat-form-field>
+            <mat-form-field appearance="fill" style="width: 100%;">
+                <mat-label>Пароль</mat-label>
+                <input matInput>
+            </mat-form-field>
+            <button mat-raised-button color="primary" class="button" routerLink='/main-page'>Вход</button>
         </form>
-    </div>
+    </mat-card>
 </div>

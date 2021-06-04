@@ -1,66 +1,27 @@
-input {
-    outline: none;
-    border: none
-}
-
-textarea {
-    outline: none;
-    border: none
-}
-
-* {
-    font-family: 'Inter-Medium';
-}
-
-
-/*textarea:focus,
-input:focus {
-    border-color: transparent!important
-}*/
-
-button {
-    outline: none!important;
-    border: none;
-    background: 0 0
-}
-
-button:hover {
-    cursor: pointer
-}
-
 .main-container {
     background-image: url("back_img.png");
     background-position: center bottom;
     background-size: 100vw auto;
-    width: 100%;
     min-height: 100vh;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 15px;
-    /*background: #f2f2f2*/
 }
 
-.login-windows {
+.login-window {
     width: 350px;
-    height: 500px;
-    background: #fff;
-    border-radius: 10px;
-    overflow: hidden;
+    height: 470px;
+    border-radius: 5px;
     padding: 30px 25px;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1);
 }
 
-.login-form {
+.login-form .input {
     width: 100%;
 }
 
 .title {
     display: block;
     font-size: 28px;
-    color: #333;
-    line-height: 1.2;
     text-align: center;
     padding-bottom: 15px;
 }
@@ -68,47 +29,19 @@ button:hover {
 .descript {
     display: block;
     font-size: 20px;
-    color: #333;
-    line-height: 1.2;
     text-align: center;
     padding-bottom: 30px;
 }
 
-.wrap-input {
-    width: 100%;
-    position: relative;
-    margin-bottom: 10px;
-    padding-bottom: 20px;
-}
-
-.input {
-    font-size: 15px;
-    color: #555;
-    line-height: 1.2;
-    display: block;
-    width: 100%;
-    height: 45px;
-    background: 0 0;
-    border-bottom: 2px solid #adadad
-}
-
-.container-login-form-btn {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 60px
-}
-
-.login-form-btn {
+.button {
     font-size: 20px;
-    color: #fff;
-    border-radius: 25px;
-    background: #335252;
-    line-height: 1.2;
+    margin-left: 10%;
+    margin-top: 5%;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 50px
+    width: 80%;
+    height: 50px;
+    border-radius: 25px;
 }

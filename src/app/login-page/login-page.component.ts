@@ -37,4 +37,8 @@ export class LoginPage implements OnInit{
         let el = ev.target as HTMLStyleElement
         el.style.borderBottom = '2px solid #adadad'
     }
+
+    onClick(){
+        
+    }
 }

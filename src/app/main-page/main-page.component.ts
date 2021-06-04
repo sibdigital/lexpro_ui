@@ -34,7 +34,7 @@ export class MainPage implements OnInit{
         +"<div style=\"padding-left: 40px; position: absolute; padding-top: 6px; color: black;\">"
         +"Роли и права</div></div>"
 
-        document.getElementById('usersMenu')!!.appendChild(this.usersDiv)
+        document.getElementById('456')!!.appendChild(this.usersDiv)
     }
 
     closeUsersMenu(){
