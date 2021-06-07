@@ -18,10 +18,15 @@ import { DeletedContainer } from "../containers/deleted-container/deleted-contai
 import { GroupsContainer } from "../containers/groups-container/groups-container.component";
 import { RkkContainer } from "../containers/rkk-container/rkk-container.component";
 import { TypesContainer } from "../containers/types-container/types-container.component";
+import { MatTableModule } from '@angular/material/table'
+import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from "@angular/material/form-field";
+import { MatSortModule } from "@angular/material/sort";
 
 @NgModule({
     declarations: [
-        MainPage
+        MainPage,
+        UsersContainer,
+        TypesContainer
     ],
     imports: [
         RouterModule.forChild([
@@ -70,10 +75,17 @@ import { TypesContainer } from "../containers/types-container/types-container.co
         MatExpansionModule,
         MatMenuModule,
         MatSidenavModule,
-        MatIconModule
+        MatIconModule,
+        MatTableModule,
+        MatSortModule
     ],
     bootstrap: [
         MainPage
+    ],
+    providers: [
+        { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } }
+    ],
+    exports: [
     ]
 })
 
