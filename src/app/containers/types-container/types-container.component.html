@@ -1,3 +1,17 @@
+<section>
+    <div class="types_buttons">
+        <button class="types_button" style="margin-right: 15px;" mat-flat-button>
+            <mat-icon>add</mat-icon>Добавить
+        </button>
+        <button class="types_button" style="margin-right: 15px;" mat-flat-button>
+            <mat-icon>edit</mat-icon>Редактировать
+        </button>
+        <button class="types_button" mat-flat-button>
+            <mat-icon>delete</mat-icon>Удалить
+        </button>
+    </div>
+</section>
+
 <div style="padding-right: 10px; padding-left: 10px; padding-top: 10px;">
     <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
 
@@ -25,5 +39,6 @@
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
     </table>
 </div>
-
-<button (click)="cl()">2121</button>
+<!--
+    <button (click)="cl()">2121</button>
+-->

@@ -19,6 +19,7 @@ export class TypesContainer implements OnInit {
     tableData: TableData[] = []
     displayedColumns: string[] = ['login', 'fam', 'name', 'otch'];
     dataSource!: MatTableDataSource<TableData>
+    i = 0
 
     @ViewChild(MatSort) sort!: MatSort;
 
@@ -36,7 +37,7 @@ export class TypesContainer implements OnInit {
     }
 
     cl() {
-        this.tableData.push({ login: 6, fam: '2', name: 3, otch: '4' })
+        this.tableData.push({ login: this.i++, fam: '2', name: 3, otch: '4' })
         this.dataSource._updateChangeSubscription()
 
         console.log(this.dataSource)
