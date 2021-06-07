@@ -1,4 +1,6 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ViewChild } from "@angular/core";
+import { MatSort } from "@angular/material/sort";
+import { MatTableDataSource } from "@angular/material/table";
 
 export interface TableData {
     fam: string;
@@ -6,35 +8,37 @@ export interface TableData {
     name: number;
     otch: string;
 }
-
-
-const ELEMENT_DATA: TableData[] = [
-    { login: 1, fam: 'Hydrogen', name: 1.0079, otch: 'H' },
-    { login: 2, fam: 'Helium', name: 4.0026, otch: 'He' },
-    { login: 3, fam: 'Lithium', name: 6.941, otch: 'Li' },
-    { login: 4, fam: 'Beryllium', name: 9.0122, otch: 'Be' },
-    { login: 5, fam: 'Boron', name: 10.811, otch: 'B' },
-    { login: 6, fam: 'Carbon', name: 12.0107, otch: 'C' },
-    { login: 7, fam: 'Nitrogen', name: 14.0067, otch: 'N' },
-    { login: 8, fam: 'Oxygen', name: 15.9994, otch: 'O' },
-    { login: 9, fam: 'Fluorine', name: 18.9984, otch: 'F' },
-    { login: 10, fam: 'Neon', name: 20.1797, otch: 'Ne' },
-];
 @Component({
     selector: 'app-types-container',
     templateUrl: './types-container.component.html',
     styleUrls: ['./types-container.component.css']
 })
 
-export class TypesContainer implements OnInit{
+export class TypesContainer implements OnInit {
 
-    tableData!: TableData[]
+    tableData: TableData[] = []
+    displayedColumns: string[] = ['login', 'fam', 'name', 'otch'];
+    dataSource!: MatTableDataSource<TableData>
 
-    constructor(){    
-        //tabl    
+    @ViewChild(MatSort) sort!: MatSort;
+
+    constructor() {
+        this.tableData.push({ login: 1, fam: '2', name: 3, otch: '4' })
+        this.dataSource = new MatTableDataSource(this.tableData);
     }
 
-    ngOnInit(){
-        
+    ngAfterViewInit() {
+        this.dataSource.sort = this.sort;
+    }
+
+    ngOnInit() {
+
+    }
+
+    cl() {
+        this.tableData.push({ login: 6, fam: '2', name: 3, otch: '4' })
+        this.dataSource._updateChangeSubscription()
+
+        console.log(this.dataSource)
     }
 }
