@@ -38,7 +38,7 @@ export class LoginPage implements OnInit{
         el.style.borderBottom = '2px solid #adadad'
     }
 
-    onClick(){
-        
+    onClick(ev: MouseEvent){
+        ev.preventDefault()
     }
 }

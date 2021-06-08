@@ -61,3 +61,8 @@ mat-icon {
     margin-right: 5px;
     margin-left: 5px;
 }
+
+.tr:hover{
+    background-color: rgb(235, 235, 235);
+    cursor: pointer;
+}

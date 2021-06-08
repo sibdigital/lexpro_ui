@@ -11,7 +11,7 @@
     background-color: #2d3033;
 }
 
-.name{
+.name {
     padding-top: 12px;
     padding-left: 12px;
     font-size: 25px;
@@ -24,7 +24,7 @@
     left: 0;
     right: 0;
     background: #eee;
-  }
+}
 
 .menu {
     width: 250px;
@@ -44,4 +44,25 @@
 .icon {
     opacity: 70%;
     height: 22px;
+}
+
+.types_buttons {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.types_button {
+    padding-right: 10px;
+    background-color: #2d3033;
+    color: white;
+}
+
+mat-icon {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.tr:hover{
+    background-color: rgb(235, 235, 235);
+    cursor: pointer;
 }

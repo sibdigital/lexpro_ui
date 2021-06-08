@@ -15,18 +15,23 @@ import { RolesContainer } from "../containers/roles-container/roles-container.co
 import { StructContainer } from "../containers/struct-container/struct-container.component";
 import { ArchiveContainer } from "../containers/archive-container/archive-container.component";
 import { DeletedContainer } from "../containers/deleted-container/deleted-container.component";
-import { GroupsContainer } from "../containers/groups-container/groups-container.component";
+import { GroupsContainer, GroupsContainerDialog } from "../containers/groups-container/groups-container.component";
 import { RkkContainer } from "../containers/rkk-container/rkk-container.component";
-import { TypesContainer } from "../containers/types-container/types-container.component";
+import { TypesContainer, TypesContainerDialog } from "../containers/types-container/types-container.component";
 import { MatTableModule } from '@angular/material/table'
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from "@angular/material/form-field";
 import { MatSortModule } from "@angular/material/sort";
+import { MatDialogModule } from "@angular/material/dialog";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 @NgModule({
     declarations: [
         MainPage,
         UsersContainer,
-        TypesContainer
+        TypesContainer,
+        TypesContainerDialog,
+        GroupsContainer,
+        GroupsContainerDialog
     ],
     imports: [
         RouterModule.forChild([
@@ -77,7 +82,10 @@ import { MatSortModule } from "@angular/material/sort";
         MatSidenavModule,
         MatIconModule,
         MatTableModule,
-        MatSortModule
+        MatSortModule,
+        MatDialogModule,
+        FormsModule,
+        ReactiveFormsModule
     ],
     bootstrap: [
         MainPage
