@@ -1,1 +1,93 @@
-<p>Архив</p>
+<section>
+    <div class="types_buttons">
+        <button class="types_button" style="margin-right: 15px;" mat-flat-button>
+            <mat-icon>unarchive</mat-icon>Разархивировать
+        </button>
+    </div>
+</section>
+
+<div style="padding-right: 10px; padding-left: 10px; padding-top: 10px;">
+    <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+
+        <ng-container matColumnDef="number">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;"> № РКК
+            </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;"> Наименование РКК
+            </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="reg_date">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;"> Дата регистрации
+            </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="ins_date">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;"> Дата внесения
+            </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="type">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;"> Наименование РКК
+            </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>Тип НПА
+
+        <ng-container matColumnDef="subject">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;"> Субъект права
+            </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="resp_comm">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;"> Ответственный комитет
+            </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="resp_person">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;"> Ответственное лицо
+            </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="period">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;"> Контрольный срок
+            </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="session_number">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;"> Номер сессии
+            </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="session_date">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;"> Дата сессии
+            </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="agenda_ins">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;"> Включен в повестку
+            </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="status">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header style="color: black;"> Состояние
+            </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr class='tr' mat-row *matRowDef="let row; columns: displayedColumns; index as i"></tr>
+    </table>
+</div>

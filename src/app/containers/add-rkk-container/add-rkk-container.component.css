@@ -3,11 +3,6 @@
     padding: 0;
 }
 
-.types_buttons {
-    padding-top: 10px;
-    padding-left: 10px;
-}
-
 .types_button {
     padding-right: 10px;
     background-color: #2d3033;
@@ -16,7 +11,7 @@
 
 mat-icon {
     margin-right: 5px;
-    margin-left: 5px;
+    margin-left: -10px;
 }
 
 .tr:hover{

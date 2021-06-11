@@ -1,4 +1,4 @@
-import { NgModule } from "@angular/core";
+import { NgModule, ɵINJECTOR_IMPL__POST_R3__ } from "@angular/core";
 import { MatButtonModule } from "@angular/material/button";
 import { MatCardModule } from "@angular/material/card";
 import { MatExpansionModule } from "@angular/material/expansion";
@@ -8,7 +8,7 @@ import { MatListModule } from "@angular/material/list";
 import { MatMenuModule } from "@angular/material/menu";
 import { MatSelectModule } from "@angular/material/select";
 import { MatSidenavModule } from "@angular/material/sidenav";
-import { RouterModule, RouterOutlet } from "@angular/router";
+import { RouterModule } from "@angular/router";
 import { MainPage } from "./main-page.component";
 import { UsersContainer } from "../containers/users-container/users-container.component";
 import { RolesContainer } from "../containers/roles-container/roles-container.component";
@@ -23,7 +23,11 @@ import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from "@angular/material/form-field";
 import { MatSortModule } from "@angular/material/sort";
 import { MatDialogModule } from "@angular/material/dialog";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-
+import { AddRkkContainer } from "../containers/add-rkk-container/add-rkk-container.component";
+import { MatTabsModule } from "@angular/material/tabs"
+import { MatDatepickerModule } from "@angular/material/datepicker" 
+import { MatNativeDateModule} from "@angular/material/core";
+import {MatCheckboxModule} from "@angular/material/checkbox"
 @NgModule({
     declarations: [
         MainPage,
@@ -31,7 +35,11 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
         TypesContainer,
         TypesContainerDialog,
         GroupsContainer,
-        GroupsContainerDialog
+        GroupsContainerDialog,
+        RkkContainer,
+        AddRkkContainer,
+        ArchiveContainer,
+        DeletedContainer
     ],
     imports: [
         RouterModule.forChild([
@@ -62,6 +70,10 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
                         component: GroupsContainer
                     },
                     {
+                        path: 'rkk/addrkk',
+                        component: AddRkkContainer
+                    },
+                    {
                         path: 'rkk',
                         component: RkkContainer
                     },
@@ -85,7 +97,12 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
         MatSortModule,
         MatDialogModule,
         FormsModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        MatTabsModule,
+        MatSelectModule,
+        MatDatepickerModule,
+        MatNativeDateModule,
+        MatCheckboxModule
     ],
     bootstrap: [
         MainPage

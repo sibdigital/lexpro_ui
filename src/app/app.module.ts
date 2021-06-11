@@ -22,6 +22,11 @@ import { MatIconModule } from '@angular/material/icon'
 import { MatExpansionModule } from '@angular/material/expansion'
 import { MatMenuModule } from '@angular/material/menu'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatRipple, MatRippleModule } from '@angular/material/core';
+import { OverlayModule } from '@angular/cdk/overlay';
+import { PortalModule } from '@angular/cdk/portal';
+import { A11yModule } from '@angular/cdk/a11y';
 
 @NgModule({
   declarations: [
@@ -48,7 +53,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatSidenavModule,
     MatIconModule,
     HttpClientModule,
-    MainPageModule
+    MainPageModule,
+    MatTabsModule
   ],
   providers: [
     MatLabel,
@@ -56,6 +62,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CompilerConfig,
     MatSidenavContent
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports:[
+  ]
 })
 export class AppModule { }

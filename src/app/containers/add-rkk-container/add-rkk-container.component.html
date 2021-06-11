@@ -1,0 +1,328 @@
+<mat-card style="margin-top: 10px; margin-left: 10px; margin-right: 10px;">
+    <mat-tab-group style="color:black; padding-top: 10px;" mat-align-tabs="center">
+
+        <mat-tab style="color: black;" label='Паспорт ЗИ'>
+            <form>
+                <table style="width: 100%; padding-top: 10px;">
+                    <tr>
+                        <td style="padding-right: 5px;">
+                            <mat-form-field style="width: 100%;">
+                                <mat-label>Тип НПА</mat-label>
+                                <mat-select required>
+                                    <mat-option value="123">123</mat-option>
+                                    <mat-option value="345">345</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </td>
+                        <td style="padding-left: 5px;">
+                            <mat-form-field style="width: 100%;">
+                                <mat-label>Состояние</mat-label>
+                                <mat-select required>
+                                    <mat-option value="123">123</mat-option>
+                                    <mat-option value="345">345</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </td>
+                    </tr>
+                </table>
+
+                <p>
+                    <mat-form-field style="width: 100%;">
+                        <mat-label>№ РКК</mat-label>
+                        <input type="number" style="height: 20px;" matInput required>
+                    </mat-form-field>
+                </p>
+
+                <table style="width: 100%;">
+                    <tr>
+                        <td style="padding-right: 5px;">
+                            <mat-form-field style="width: 100%;">
+                                <mat-label>Наименование НПА</mat-label>
+                                <textarea required matInput></textarea>
+                            </mat-form-field>
+                        </td>
+                        <td style="padding-left: 5px;">
+                            <mat-form-field style="width: 100%;">
+                                <mat-label>Законодательная основа</mat-label>
+                                <textarea matInput></textarea>
+                            </mat-form-field>
+                        </td>
+                    </tr>
+                </table>
+
+                <table style="width: 100%;">
+                    <tr>
+                        <td style="padding-right: 5px;">
+                            <mat-form-field style="width: 100%;">
+                                <mat-label>Дата регистрации</mat-label>
+                                <input type="date" matInput>
+                            </mat-form-field>
+                        </td>
+                        <td style="padding-left: 5px;">
+                            <mat-form-field style="width: 100%;">
+                                <mat-label>Дата внесения</mat-label>
+                                <input type="date" matInput>
+                            </mat-form-field>
+                        </td>
+                    </tr>
+                </table>
+
+                <table style="width: 100%;">
+                    <tr>
+                        <td style="padding-right: 5px;">
+                            <mat-form-field style="width: 100%;">
+                                <input matInput>
+                            </mat-form-field>
+                        </td>
+                        <td style="padding-left: 5px;">
+                            <mat-form-field style="width: 100%;">
+                                <mat-label>Докладчик</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                        </td>
+                    </tr>
+                </table>
+
+                <table style="width: 100%;">
+                    <tr>
+                        <td style="padding-right: 5px;">
+                            <mat-form-field style="width: 100%;">
+                                <mat-label>Организационный комитет</mat-label>
+                                <mat-select>
+                                    <mat-option value="123">123</mat-option>
+                                    <mat-option value="345">345</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </td>
+                        <td style="padding-left: 5px;">
+                            <mat-form-field style="width: 100%;">
+                                <mat-label>Ответственное лицо</mat-label>
+                                <mat-select>
+                                    <mat-option value="123">123</mat-option>
+                                    <mat-option value="345">345</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </td>
+                    </tr>
+                </table>
+
+                <table style="width: 100%;">
+                    <tr>
+                        <td style="padding-right: 5px;">
+                            <mat-form-field style="width: 100%;">
+                                <mat-label>Включен в повестку</mat-label>
+                                <input type="date" matInput>
+                            </mat-form-field>
+                        </td>
+                        <td style="padding-left: 5px;">
+                            <mat-form-field style="width: 100%;">
+                                <mat-label>Номер по повестке</mat-label>
+                                <input matInput type="number">
+                            </mat-form-field>
+                        </td>
+                    </tr>
+                </table>
+
+                <table style="width: 100%;">
+                    <tr>
+                        <td style="padding-right: 5px;">
+                            <mat-form-field style="width: 100%;">
+                                <mat-label>Номер сессии</mat-label>
+                                <mat-select>
+                                    <mat-option value="123">123</mat-option>
+                                    <mat-option value="345">345</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </td>
+                        <td style="padding-left: 5px;">
+                            <mat-form-field style="width: 100%;">
+                                <mat-label>Дата сессии</mat-label>
+                                <input type="date" matInput>
+                            </mat-form-field>
+                        </td>
+                    </tr>
+                </table>
+
+                <table style="width: 100%;">
+                    <tr>
+                        <td>
+                            <mat-form-field style="width: 100%;">
+                                <mat-label>Дата сессии</mat-label>
+                                <input type="date" matInput>
+                            </mat-form-field>
+                        </td>
+                        <td style="padding-left: 17px;">
+                            <div style="width: 100%;">
+                                <mat-checkbox>Подготовлен к сессии</mat-checkbox>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+                <table style="width: 100%;">
+                    <tr>
+                        <td style="padding-right: 5px;">
+                            <mat-form-field style="width: 100%;">
+                                <mat-label>Подпись Главы / Председателя НХ</mat-label>
+                                <input type="date" matInput>
+                            </mat-form-field>
+                        </td>
+                        <td style="padding-left: 5px;">
+                            <mat-form-field style="width: 100%;">
+                                <mat-label>Опубликование</mat-label>
+                                <input type="date" matInput>
+                            </mat-form-field>
+                        </td>
+                    </tr>
+                </table>
+
+            </form>
+        </mat-tab>
+
+        <mat-tab label='Особые метки'>
+            <mat-tab-group style="color:black; padding-top: 10px;" mat-align-tabs="center">
+                <mat-tab style="color: black;" label='Рассылки'>
+
+                    <section>
+                        <div style="margin-top: 10px;">
+                            <button class="types_button" style="margin-right: 15px;" mat-flat-button>
+                                <mat-icon>add</mat-icon>Добавить
+                            </button>
+                            <button class="types_button" mat-flat-button>
+                                <mat-icon>delete</mat-icon>Удалить
+                            </button>
+                        </div>
+                    </section>
+
+                    <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8"
+                        style="margin-top: 10px;">
+
+                        <ng-container matColumnDef="who">
+                            <th mat-header-cell *matHeaderCellDef mat-sort-header> Кому
+                            </th>
+                            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                        </ng-container>
+
+                        <ng-container matColumnDef="date">
+                            <th mat-header-cell *matHeaderCellDef mat-sort-header> Дата
+                            </th>
+                            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                        </ng-container>
+
+                        <ng-container matColumnDef="notes">
+                            <th mat-header-cell *matHeaderCellDef mat-sort-header> Примечание
+                            </th>
+                            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                        </ng-container>
+
+                        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                        <tr class='tr' mat-row *matRowDef="let row; columns: displayedColumns; index as i"></tr>
+                    </table>
+                </mat-tab>
+
+                <mat-tab style="color: black;" label='Виза'>
+                    <section>
+                        <div style="margin-top: 10px;">
+                            <button class="types_button" style="margin-right: 15px;" mat-flat-button>
+                                <mat-icon>add</mat-icon>Добавить
+                            </button>
+                            <button class="types_button" mat-flat-button>
+                                <mat-icon>delete</mat-icon>Удалить
+                            </button>
+                        </div>
+                    </section>
+
+                    <table mat-table [dataSource]="dataSource2" matSort class="mat-elevation-z8"
+                        style="margin-top: 10px;">
+
+                        <ng-container matColumnDef="stage">
+                            <th mat-header-cell *matHeaderCellDef mat-sort-header> Стадия
+                            </th>
+                            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                        </ng-container>
+
+                        <ng-container matColumnDef="date">
+                            <th mat-header-cell *matHeaderCellDef mat-sort-header> Дата
+                            </th>
+                            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                        </ng-container>
+
+                        <ng-container matColumnDef="notes">
+                            <th mat-header-cell *matHeaderCellDef mat-sort-header> Примечание
+                            </th>
+                            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                        </ng-container>
+
+                        <tr mat-header-row *matHeaderRowDef="displayedColumns2"></tr>
+                        <tr class='tr' mat-row *matRowDef="let row; columns: displayedColumns; index as i"></tr>
+                    </table>
+                </mat-tab>
+            </mat-tab-group>
+        </mat-tab>
+
+        <mat-tab label='Вложения'>
+
+            <section>
+                <div style="margin-top: 10px;">
+                    <button class="types_button" style="margin-right: 15px;" mat-flat-button>
+                        <mat-icon>add</mat-icon>Добавить
+                    </button>
+                    <button class="types_button" mat-flat-button>
+                        <mat-icon>delete</mat-icon>Удалить
+                    </button>
+                </div>
+            </section>
+
+            <table mat-table [dataSource]="dataSourceAttachments" matSort class="mat-elevation-z8"
+                style="margin-top: 10px;">
+
+                <ng-container matColumnDef="group">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Группа
+                    </th>
+                    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="type">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Тип
+                    </th>
+                    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="member">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Участник
+                    </th>
+                    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="number">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Номер
+                    </th>
+                    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="date">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Дата
+                    </th>
+                    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="count">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Количество
+                    </th>
+                    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="file">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Файл
+                    </th>
+                    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumnsAttachments"></tr>
+                <tr class='tr' mat-row *matRowDef="let row; columns: displayedColumns; index as i"></tr>
+            </table>
+        </mat-tab>
+
+        <mat-tab label='Протокол правки'>Протокол правки</mat-tab>
+    </mat-tab-group>
+</mat-card>
